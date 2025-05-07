@@ -108,6 +108,44 @@ If you just want to verify that the site builds, using the `build` command inste
 jekyll serve
 ```
 
+## Adding Content
+
+For purposes of the following content, "site root" refers to "docs-src".
+
+### Styles, Assets, and Pages
+
+Jekyll will copy any HTML or Markdown page found at in the site root over to the `/docs` directory in the same relative location. For example, the 404.html page found 
+at `/docs-src/404.html` will be copied to `/docs/404.html`.
+
+Directories which begin with an underscore, `_`, are not copied - these are assuming to be "building blocks" by Jekyll. Directories which do **not** start with an underscore 
+are copied to the same relative location. For example, `/docs-src/libs` will be copied to `/docs/libs`.
+
+The following directories will contain static assets:
+
+- /libs
+- /js
+- /images
+
+`/libs` should used for any third-party libraries to be used in this project (i.e. Font Awesome and Bootstrap).
+
+The `/css` directory is a special case. We define Sass files inside that directory, but the prupose of those files is to define the CSS files which Jekyll should create when 
+transpiling each Sass file; you can think of these Sass files as "bundles". We tell Jekyll to process these bundles by adding front matter to each Sass file. For example, the main 
+"site" stylesheet is defined like so:
+
+```
+---
+---
+@use "main"
+```
+
+This will result in a CSS file being output to `/css/site.css`. Everything beyond the front matter is just pure Sass syntax.
+
+### Adding New Pages
+
+`/pages` is where we define each page for this website. Jekyll will create a new HTML page for each HTML template or Markdown file found in `/pages`, using the 
+front matter to determine the layout template to use and the location to which the file should be written. You can find more information by visiting the 
+[Jekyll documentation](https://jekyllrb.com/docs/pages/).
+
 That's pretty much it. Have fun!
 
 ### A Few Notes
