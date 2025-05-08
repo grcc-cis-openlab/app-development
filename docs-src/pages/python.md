@@ -41,7 +41,7 @@ For a simple example program you can run, to verify that Python is installed cor
 
 ## Install (or Extend) Visual Studio Code
 
-**Visual Studio Code** (also known as _VS Code_) is a multi-platform code editor and development environment. It comes with native support for mutiple programming 
+**Visual Studio Code** (also known as _VS Code_) is a multi-platform code editor and development environment. It comes with native support for multiple programming 
 languages, and has an extensive ecosystem of free or paid extensions to add support for additional languages or frameworks. To that end, it makes a great tool for 
 learning Python.
 
