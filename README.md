@@ -105,7 +105,7 @@ press your `cntrl` and `c` keys on your keyboard. Enter `y` to stop the site. Yo
 If you just want to verify that the site builds, using the `build` command instead:
 
 ```shell
-jekyll serve
+jekyll build
 ```
 
 ## Adding Content
