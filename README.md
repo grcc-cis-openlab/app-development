@@ -114,7 +114,7 @@ For purposes of the following content, "site root" refers to "docs-src".
 
 ### Styles, Assets, and Pages
 
-Jekyll will copy any HTML or Markdown page found at in the site root over to the `/docs` directory in the same relative location. For example, the 404.html page found 
+Jekyll will copy any HTML or Markdown page found in the site root over to the `/docs` directory in the same relative location. For example, the 404.html page found 
 at `/docs-src/404.html` will be copied to `/docs/404.html`.
 
 Directories which begin with an underscore, `_`, are not copied - these are assuming to be "building blocks" by Jekyll. Directories which do **not** start with an underscore 
