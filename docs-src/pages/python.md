@@ -3,6 +3,7 @@ layout: default
 title: Setting up Python for Local Development
 pageKey: python
 permalink: /python
+searchable: true
 ---
 
 # Setting up Python for Local Development

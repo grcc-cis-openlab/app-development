@@ -3,6 +3,12 @@ require 'json'
 require 'nokogiri'
 require 'loofah'
 
+# Registers a Jekyll hook for building the search index for lunarjs.
+#
+# Creates the corpus (search index) by pulling the text content from each file in the `pages` directory.
+# If the page contains HTML, the HTML is scrubbed prior to building the corpus entry.
+# 
+# The search index is written to the output directory for this Jekyll site, to simplify the build process.
 Jekyll::Hooks.register :site, :post_write do |site|
     root = Pathname.new(__FILE__).join('..')
     data_dir = root + '../../docs/js/data'
@@ -16,7 +22,7 @@ Jekyll::Hooks.register :site, :post_write do |site|
 
     index_json = File.new(index_path, 'w')
 
-    json = Array.new
+    json = []
     index = 0
 
     for page in site.pages
