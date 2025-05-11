@@ -73,7 +73,8 @@ extension will be active.
 
 Another great option for developing in Python is **PyCharm**, an _integrated development environment_, or _IDE_, from JetBrains. PyCharm is an IDE focused on Python and Python-based frameworks, and is probably the best choice for complex projects.
 
-PyCharm has both a Pro (paid) version, and a Community (free) edition. Previously, these were separate downloads, but as of 2025, you can simply download one installer:
+PyCharm has both a Pro (paid) version, and a Community (free) edition. Previously, these were separate downloads, but as of 2025, you can simply download one installer 
+by visiting [https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download):
 
 ![Download PyCharm](./images/download-pycharm-ide.png)
 
